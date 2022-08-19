@@ -1,0 +1,31 @@
+GET http://localhost:5000/ping
+
+###
+GET http://localhost:5000/pet
+### if the pet doesn't exist, want a relevant erro code!
+GET http://localhost:5000/pet/100
+
+###
+
+DELETE http://localhost:5000/pet/1
+
+###
+
+POST http://localhost:5000/pet/
+content-type: application/json
+
+{
+    "animal": "Chicken",
+    "breed": "Some Kinda Chicken",
+    "name": "Breaded",
+    "age": 1
+}
+
+###
+PUT http://localhost:5000/pet/1
+content-type: application/json
+
+{
+    "animal": "Chicken",
+    "breed": "Some Kinda Chicken"
+}
